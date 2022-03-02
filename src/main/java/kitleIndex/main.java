@@ -3,7 +3,6 @@ package kitleIndex;
 import java.util.Scanner;
 
 public class main {
-    
     public static void main(String[] args) {
         Scanner input= new Scanner(System.in);
         double kilo,boy,index ;
