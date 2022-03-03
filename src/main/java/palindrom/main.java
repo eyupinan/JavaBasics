@@ -14,6 +14,19 @@ public class main {
         return num == reverseNumber;
 
     }
+    public static boolean  isPalindromString(String s){
+
+        int end;
+        if (s.length()%2==0) end = s.length()/2;
+        else end = (s.length()-1)/2;
+        boolean isPalindrom=true;
+        for (int i =0;i<end;i++){
+            if (s.charAt(i)!=s.charAt(s.length()-i-1)){
+                isPalindrom=false;
+            }
+        }
+        return isPalindrom;
+    }
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);
