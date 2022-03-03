@@ -16,6 +16,17 @@ public class main {
         }
         System.out.printf("Sonuç : "+ toplam);
 
+        // dizileri kullanarak yapılan
+        Integer[] array1 = {1,2,3,4,5,6,7,8,9,10};
+        System.out.printf("Sonuç : "+ fromArray(array1));
 
+
+    }
+    public static double fromArray(Integer[] array){
+        double total = 0 ;
+        for(int i : array) {
+            total += ( 1.0 / i ) ;
+        }
+        return total ;
     }
 }
